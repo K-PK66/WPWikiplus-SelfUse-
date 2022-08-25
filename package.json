@@ -1,0 +1,52 @@
+{
+    "name": "wikiplus-core",
+    "version": "4.0.8",
+    "homepage": "https://wikiplus-app.smartgslb.com/",
+    "description": "A front-end jQuery-based Mediawiki plugin.",
+    "main": "dist/Main.js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Wikiplus/Wikiplus"
+    },
+    "scripts": {
+        "watch": "webpack-cli --config ./build/webpack.development.js --watch",
+        "build": "webpack-cli --config ./build/webpack.production.config.js"
+    },
+    "keywords": [
+        "Wikiplus",
+        "Mediawiki"
+    ],
+    "author": {
+        "name": "Eridanus Sora",
+        "email": "sora@sound.moe"
+    },
+    "contributors": [
+        {
+            "name": "Ted Zyzsdy",
+            "email": "zyzsdy@gmail.com",
+            "url": "https://zyzsdy.com"
+        }
+    ],
+    "license": "Apache-2.0",
+    "devDependencies": {
+        "@babel/core": "^7.17.5",
+        "@babel/eslint-parser": "^7.17.0",
+        "@babel/plugin-proposal-class-properties": "^7.16.7",
+        "@babel/preset-env": "^7.16.11",
+        "@types/jquery": "^3.5.3",
+        "babel-loader": "^8.2.3",
+        "css-loader": "^6.6.0",
+        "eslint": "^8.9.0",
+        "eslint-config-prettier": "^8.3.0",
+        "eslint-plugin-prettier": "^3.4.1",
+        "prettier": "2.5.1",
+        "regenerator-runtime": "^0.13.9",
+        "style-loader": "^3.3.1",
+        "terser-webpack-plugin": "^5.3.1",
+        "webpack": "^5.69.1",
+        "webpack-cli": "^4.9.2"
+    },
+    "dependencies": {
+        "core-js": "^3.6.5"
+    }
+}
